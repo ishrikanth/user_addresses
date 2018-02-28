@@ -125,7 +125,7 @@ Please note that Middle Name and Last Name can be blank. So, make sure you don't
 
 ### Create User
 
-curl -X POST \
+* `curl -X POST \
   http://localhost:3000/users.json \
   -H 'content-type: application/json' \
   -d '{
@@ -145,7 +145,7 @@ curl -X POST \
           }
        }
     ]
- }'
+ }'`
 
 ### List User
 
