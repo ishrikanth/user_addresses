@@ -125,7 +125,7 @@ Please note that Middle Name and Last Name can be blank. So, make sure you don't
 
 ### Create User
 
-* `curl -X POST \
+ `curl -X POST \
   http://localhost:3000/users.json \
   -H 'content-type: application/json' \
   -d '{
@@ -149,23 +149,23 @@ Please note that Middle Name and Last Name can be blank. So, make sure you don't
 
 ### List User
 
-curl -X GET http://localhost:3000/users/adults.json
+`curl -X GET http://localhost:3000/users/adults.json`
 
 ### List adolescenents
 
-curl -X GET http://localhost:3000/users/adolescenents.json
+`curl -X GET http://localhost:3000/users/adolescenents.json`
 
 #### List adults
 
-curl -x GET http://localhost:3000/users/adults.json
+`curl -x GET http://localhost:3000/users/adults.json`
 
 ### List childrens
 
-curl -X GET http://localhost:3000/users/childrens.json
+`curl -X GET http://localhost:3000/users/childrens.json`
 
 ### Update Users
 
-curl -X PUT \
+`curl -X PUT \
   http://localhost:3000/users/1.json \
   -H 'content-type: application/json' \
   -d '{
@@ -185,10 +185,10 @@ curl -X PUT \
           }
        }
     ]
- }'
+ }'`
 
 ### Delete User
 
- curl -X DELETE \
+ `curl -X DELETE \
    http://localhost:3000/users/1.json \
-   -H 'content-type: application/json'
+   -H 'content-type: application/json'`
