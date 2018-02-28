@@ -135,7 +135,7 @@ Please note that Middle Name and Last Name can be blank. So, make sure you don't
     "age":"45",
     "addresses":[
        {
-          "shippings":{
+          "shipping":{
              "line1":"Apt #14, Suite #22",
              "line2":"ABC Street, BCDTown",
              "city":"XYCity",
@@ -175,7 +175,7 @@ Please note that Middle Name and Last Name can be blank. So, make sure you don't
     "age":"45",
     "addresses":[
        {
-          "shippings":{
+          "shipping":{
              "line1":"Apt #14, Suite #22",
              "line2":"ABC Street, BCDTown",
              "city":"XYCity",
