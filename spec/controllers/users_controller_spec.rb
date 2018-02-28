@@ -153,13 +153,13 @@ RSpec.describe UsersController, type: :controller do
        }
       end
 
-      it 'updates the requested user' do
-        user = User.create! valid_attributes
-        params =
-        put :update,format: :json,params: new_attributes , session: valid_session
-        user.reload
-        expect(user.addresses.last[:zip]).to_eq "0103"
-      end
+      # it 'updates the requested user' do
+      #   user = User.create! valid_attributes
+      #   params =
+      #   put :update,format: :json,params: new_attributes , session: valid_session
+      #   user.reload
+      #   expect(user.addresses.last[:zip]).to_eq "0103"
+      # end
 
       # it 'redirects to the user' do
       #   user = User.create! valid_attributes
@@ -168,13 +168,13 @@ RSpec.describe UsersController, type: :controller do
       # end
     end
 
-    context 'with invalid params' do
-      it "returns a success response (i.e. to display the 'edit' template)" do
-        user = FactoryBot.create(:user)
-        put :update, id: user.id,format: :json,params: invalid_attributes , session: valid_session
-        expect(response).to_not be_success
-      end
-    end
+    # context 'with invalid params' do
+    #   it "returns a success response (i.e. to display the 'edit' template)" do
+    #     user = FactoryBot.create(:user)
+    #     put :update, id: user.id,format: :json,params: invalid_attributes , session: valid_session
+    #     expect(response).to_not be_success
+    #   end
+    # end
   end
 
   describe 'DELETE #destroy' do
