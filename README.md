@@ -192,3 +192,8 @@ Please note that Middle Name and Last Name can be blank. So, make sure you don't
  `curl -X DELETE \
    http://localhost:3000/users/1.json \
    -H 'content-type: application/json'`
+
+### Improvements
+	* More test cases can be added
+	* JSON schema validation can be added so that any new changes to the schema will not break existing things.
+	* Some of the logic in the controllers can be moved to service layer or Model
